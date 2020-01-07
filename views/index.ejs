@@ -1,11 +1,33 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+
+<head>
+  <title>AA Chat App</title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+  <h1>Try my Chat App</h1>
+  <p class="thisP"></p>
+  <div>
+    <label for="">Your Name</label>
+    <input type="text" class="name">
+    <label class="name-msg"></label>
+  </div>
+  
+  
+  <hr>
+  <p>type your text here:</p>
+  <textarea class="user-text" id="" cols="50" rows="5"></textarea>
+  <button class="msg-send">Send msg</button>
+  
+  <hr>
+  <div class="messages">
+
+  </div>  
+  
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="javascripts/script.js"></script>
+</body>
+
 </html>
